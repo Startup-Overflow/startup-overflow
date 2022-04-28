@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #14b8a6;
+  --secondary-color: #fff;
+  --dark-grey: #242424;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.9rem;
+  margin: 1rem;
+  color: var(--dark-grey);
+}
+.about-highlight {
+  color: var(--primary-color);
+}
+.about-content {
+  font-size: larger;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  color: var(--dark-grey);
+  margin: auto;
+}

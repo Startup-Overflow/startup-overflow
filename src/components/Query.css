@@ -1,0 +1,25 @@
+:root {
+    --primary: #14b8a6;
+    --secondary: #fff;
+    --dark-grey: #242424;
+}
+
+.input-area {
+    display: flex;
+    padding-top: 40px;
+    background-color: var(--secondary);
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.query-input {
+    width: 60vw;
+    padding: 10px 40px;
+    border-radius: 2px;
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border: 1px solid var(--dark-grey);
+  }

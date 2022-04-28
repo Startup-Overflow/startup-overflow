@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #14b8a6;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+  --secondary-color: #fff;
+}
+
+.main-login {
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow-x: hidden;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(50%, #dfdddd),
+    color-stop(50%, var(--primary-color))
+  );
+  background: linear-gradient(to right, #dfdddd 50%, var(--primary-color) 50%);
+}
+.login-container {
+  height: 75vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(236, 236, 236, 0.7),
+    rgba(236, 236, 236, 0.4)
+  );
+  border-radius: 1rem;
+  margin: 2rem auto;
+  box-shadow: 0.5rem 0.5rem 2rem -1rem white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side,
+.right-side {
+  margin: 2rem;
+  box-shadow: 0.5rem 0.5rem 2rem -1rem rgba(58, 57, 57);
+  height: 80%;
+  width: 100%;
+}
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#username,
+#password {
+  border-radius: 0.4rem;
+  display: block;
+  border: none;
+  height: 20%;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  padding: 0.2rem 1rem;
+  color: var(--dark-grey);
+  transition: all 0.1s ease-in-out;
+}
+#username:hover {
+  box-shadow: 4px 3px 9px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+#password:hover {
+  box-shadow: 4px 3px 9px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+
+#username:focus {
+  outline: none;
+  border: none;
+}
+#password:focus {
+  outline: none;
+  border: none;
+}
+label {
+  display: block;
+  text-align: left;
+  width: 78%;
+  margin: auto;
+  font-size: medium;
+  color: var(--dark-grey);
+  margin-bottom: 0.5rem;
+}
+.submitBtn {
+  text-align: center;
+}
+.logo-header {
+  text-align: center;
+  height: 7rem;
+}
+#img-id {
+  height: 100%;
+  object-fit: cover;
+}
+.link {
+  margin-left: 0.4rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.link:hover {
+  transform: translateY(-5px);
+  color: var(--dark-grey);
+}
+.welcomeNote h3 {
+  margin-left: 1rem;
+  color: var(--dark-grey);
+  float: left;
+  margin-bottom: 2.5rem;
+}
+#welcome-img {
+  height: 20%;
+  width: 80%;
+  margin: 0rem auto;
+  object-fit: cover;
+}
+.register-link {
+  text-align: center;
+  padding-top: 2rem;
+}
+.footer {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 2rem;
+  padding: 0.6rem;
+  margin-top: 10rem;
+  background: rgba(236, 236, 236, 0.4);
+}
+.footer-text {
+  font-size: small;
+}

@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #14b8a6;
+  --secondary-color: #fff;
+  --dark-grey: #242424;
+}
+
+.main-register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.left-register-side {
+  flex: 0.33;
+  background: var(--dark-grey);
+}
+.header-register {
+  height: 10rem;
+  margin-top: 2rem;
+}
+#header-img-id {
+  height: 100%;
+  object-fit: cover;
+}
+.body-register {
+  text-align: center;
+  height: 10rem;
+  margin-top: 2rem;
+}
+#register-img-id {
+  height: 100%;
+  object-fit: cover;
+}
+p {
+  margin-top: 4rem;
+  color: var(--secondary-color);
+  padding: 1.8rem 0.8rem;
+  text-align: left;
+  font-size: large;
+}
+.right-register-side {
+  flex: 0.67;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.top-right-register {
+  float: right;
+  margin-right: 1.5rem;
+  font-size: small;
+  font-weight: 200;
+}
+#link-signIn {
+  text-decoration: none;
+  margin-left: 0.3rem;
+  font-style: italic;
+  cursor: pointer;
+  color: var(--dark-grey);
+}
+#link-signIn:hover {
+  color: var(--primary-color);
+}
+.body-right-register {
+  height: 110vh;
+  width: 100%;
+}
+.container-register {
+  background: rgba(236, 236, 236, 0.4);
+  height: 90%;
+  width: 70%;
+  margin: 2rem auto;
+  box-shadow: 0rem 0rem 2rem 0.1rem var(--primary-color);
+  border-radius: 0.5rem;
+}
+.register-header {
+  padding: 1rem;
+}
+.input-group-register {
+  margin: auto;
+  width: 100%;
+}
+#regFName,
+#regLName,
+#regEmail,
+#regUser,
+#regPassword,
+#regConfirmPassword {
+  border-radius: 0.4rem;
+  display: block;
+  border: none;
+  margin: auto;
+  width: 35vw;
+  height: 5vh;
+  margin-bottom: 1.5rem;
+  padding: 0.2rem 1rem;
+  box-shadow: 4px 3px 9px -1px var(--dark-grey);
+  transition: all 0.1s ease-in-out;
+}
+#regFName:hover,
+#regLName:hover,
+#regEmail:hover,
+#regUser:hover,
+#regPassword:hover,
+#regConfirmPassword:hover {
+  box-shadow: 4px 3px 9px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+#regFName:focus,
+#regLName:focus,
+#regEmail:focus,
+#regUser:focus,
+#regPassword:focus,
+#regConfirmPassword:focus {
+  outline: none;
+  border: none;
+}
+.registerBtn {
+  padding-top: 1.5rem;
+  text-align: center;
+}
