@@ -72,3 +72,6 @@
   font-style: italic;
   cursor: pointer;
 }
+.vote {
+  margin-left: 2rem;
+}
