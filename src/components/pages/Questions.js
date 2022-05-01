@@ -39,7 +39,7 @@ function Question() {
   }
   const questionSet = [
     "HOW DO YOU START A STARTUP?",
-    "WHAT DO STARTUP NEED TO KNOW?",
+    "WHAT DO STARTUPS NEED TO KNOW?",
     "WHY DO STARTUPS FAIL?",
     "WHY DO STARTUPS SUCCEED?",
     "HOW TO OBTAIN STARTUP FUNDING/CAPITAL?",
