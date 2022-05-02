@@ -1,0 +1,71 @@
+:root {
+    --primary: #14b8a6;
+    --secondary: #fff;
+    --dark-grey: #242424;
+    --light-grey: #9ca3af;
+}
+
+.session_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 20px var(--light-grey);
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+.session_card:hover {
+    transform : scale(1.02);
+    background-color: var(--secondary);
+}
+
+.session_card__body {
+    overflow: hidden;
+    text-align: center;
+    padding:1.3rem;
+}
+
+.session_card__image {
+    height:15rem;
+    width:20rem;
+    border-radius: 0;
+    object-fit: fill;
+}
+
+.session_card__title {
+    padding: 1rem;
+}
+
+.session_card__title:hover {
+    color: var(--primary);
+}
+
+.eventDateTime {
+    padding-bottom: 1rem;
+}
+
+.date {
+    padding-left: 0.3rem;
+    padding-right: 1rem;
+}
+
+.time {
+    padding-left: 0.3rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 24rem));
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sessions__heading {
+    padding-top: 5rem;
+    text-align: center;
+    color: var(--dark-grey);
+}
