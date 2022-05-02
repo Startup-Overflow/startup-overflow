@@ -58,7 +58,12 @@ function Question() {
       <HeroSection />
       <div className="question">
         <h1 className="question-heading">Questions</h1>
-        <h4 className="question-ask-link">Ask a Question</h4>
+
+        <h4 className="question-ask-link">
+          <Link className="link" to="/askQuestion">
+            Ask a Question
+          </Link>
+        </h4>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[0]}
         </p>

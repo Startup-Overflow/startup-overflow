@@ -10,6 +10,7 @@ import Services from "./components/pages/Services";
 import Blogs from "./components/pages/Blogs";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
+import AskQuestion from "./components/pages/AskQuestion";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/askQuestion" element={<AskQuestion />} />
         </Routes>
       </Router>
     </>
