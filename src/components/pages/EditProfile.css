@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #14b8a6;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+  --secondary-color: #fff;
+}
+.edit-profile {
+  height: 100%;
+  width: 100%;
+}
+.edit-profile-heading {
+  color: var(--dark-grey);
+  text-align: center;
+  margin: 1.6rem;
+  font-size: 2.5rem;
+}
+.edit-profile-heading-selected {
+  color: var(--primary-color);
+}
+.name-input {
+  text-align: center;
+}
+#fname-edit,
+#lname-edit {
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+  padding: 1.6rem;
+  margin: 1.8rem;
+  height: 6vh;
+  width: 42%;
+}
+.textarea-edit {
+  font-size: 1.3rem;
+  width: 80rem;
+  height: 30vh;
+}
+#hobbies-edit,
+#skills-edit,
+#interest-edit {
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  padding: 1.6rem;
+  margin: 1rem;
+  margin-top: 2rem;
+  height: 6vh;
+  width: 28%;
+}

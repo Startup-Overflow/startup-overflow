@@ -11,6 +11,7 @@ import Blogs from "./components/pages/Blogs";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import AskQuestion from "./components/pages/AskQuestion";
+import EditProfile from "./components/pages/EditProfile";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/askQuestion" element={<AskQuestion />} />
+          <Route path="/editProfile" element={<EditProfile />} />
         </Routes>
       </Router>
     </>
