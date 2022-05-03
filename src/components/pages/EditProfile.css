@@ -28,6 +28,24 @@
   margin: 1.8rem;
   height: 6vh;
   width: 42%;
+  border: none;
+  box-shadow: 3px 3px 6px -1px var(--dark-grey);
+}
+#fname-edit:hover,
+#lname-edit:hover,
+#hobbies-edit:hover,
+#skills-edit:hover,
+#interest-edit:hover {
+  box-shadow: 4px 3px 9px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+#fname-edit:focus,
+#lname-edit:focus,
+#hobbies-edit:focus,
+#skills-edit:focus,
+#interest-edit:focus {
+  outline: none;
+  border: none;
 }
 .textarea-edit {
   font-size: 1.3rem;
@@ -42,6 +60,33 @@
   padding: 1.6rem;
   margin: 1rem;
   margin-top: 2rem;
+  border: none;
+  box-shadow: 3px 3px 6px -1px var(--dark-grey);
   height: 6vh;
   width: 28%;
+}
+.multiple-select {
+  margin: 2rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.searchBox {
+  padding: 1rem;
+  box-shadow: 3px 3px 6px -1px var(--dark-grey);
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+}
+.searchBox:hover {
+  box-shadow: 6px 5px 11px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+.option {
+  color: var(--dark-grey);
+}
+
+.edit-profile-btn {
+  text-align: center;
 }

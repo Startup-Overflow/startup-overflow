@@ -1,7 +1,20 @@
 import "./EditProfile.css";
+import { useState } from "react";
 import HeroSection from "../HeroSection";
 import Footer from "../Footer";
+import { Button } from "../Button";
+import { Multiselect } from "multiselect-react-dropdown";
 function EditProfile() {
+  function editProfileHandler(e) {
+    e.preventDefault();
+  }
+  const data = [
+    { profile: "Entrepreneur", id: 1 },
+    { profile: "Mentor", id: 2 },
+    { profile: "Investor", id: 3 },
+    { profile: "Partner", id: 4 },
+  ];
+  const [options] = useState(data);
   return (
     <div className="edit-profile">
       <HeroSection />
@@ -27,6 +40,22 @@ function EditProfile() {
           <input type="text" id="skills-edit" placeholder="Skills" />
           <input type="text" id="interest-edit" placeholder="Interest" />
         </span>
+      </div>
+      <div className="multiple-select">
+        <Multiselect
+          options={options}
+          className="multi-profile"
+          displayValue="profile"
+        />
+      </div>
+      <div className="edit-profile-btn">
+        <Button
+          onClick={editProfileHandler}
+          buttonStyle="btn--outline"
+          buttonSize="btn--large"
+        >
+          Submit
+        </Button>
       </div>
       <Footer />
     </div>
