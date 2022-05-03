@@ -1,8 +1,8 @@
 import "./Question.css";
-import { useState } from "react";
+// import { useState } from "react";
 import HeroSection from "../HeroSection";
 import Footer from "../Footer";
-import { Button } from "../Button";
+// import { Button } from "../Button";
 import { Link } from "react-router-dom";
 function Question() {
   // const [countUp, setCountUp] = useState(0);
