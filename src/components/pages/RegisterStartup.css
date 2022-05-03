@@ -1,0 +1,52 @@
+:root {
+  --primary-color: #14b8a6;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+  --secondary-color: #fff;
+}
+
+.register-startup {
+  height: 100%;
+  width: 100%;
+}
+.startup-title {
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+  display: block;
+  box-shadow: 4px 3px 9px -1px var(--dark-grey);
+  border: none;
+  transition: all 0.1s ease-in-out;
+}
+.startup-title:hover,
+.short-description-textarea-register-startup:hover {
+  box-shadow: 4px 3px 9px -1px var(--primary-color);
+  outline: 0.5px solid var(--primary-color);
+}
+.startup-title:focus,
+.short-description-textarea-register-startup:focus {
+  outline: none;
+  border: none;
+}
+.short-description-textarea-register-startup {
+  border: none;
+  resize: none;
+  font-size: 1rem;
+  margin-top: 2.5rem;
+  border-radius: 0.2rem;
+  box-shadow: 4px 3px 9px -1px var(--dark-grey);
+  padding: 1.2rem;
+  width: 80%;
+  height: 30vh;
+}
+.register-hashtag {
+  margin-top: 2.5rem;
+}
+.register-startup-button {
+  margin: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}

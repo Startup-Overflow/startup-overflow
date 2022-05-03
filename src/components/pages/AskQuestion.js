@@ -15,7 +15,10 @@ function AskQuestion() {
   return (
     <div className="ask-question">
       <HeroSection />
-      <div className="question-heading">Add Question</div>
+      <div className="edit-profile-heading">
+        Ask
+        <span className="edit-profile-heading-selected"> Question</span>
+      </div>
       <input placeholder="Post Title" type="text" className="post-title" />
 
       <div className="short-description">

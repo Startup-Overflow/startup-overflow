@@ -12,6 +12,7 @@ import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import AskQuestion from "./components/pages/AskQuestion";
 import EditProfile from "./components/pages/EditProfile";
+import RegisterStartup from "./components/pages/RegisterStartup";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/askQuestion" element={<AskQuestion />} />
           <Route path="/editProfile" element={<EditProfile />} />
+          <Route path="/registerStartup" element={<RegisterStartup />} />
         </Routes>
       </Router>
     </>
