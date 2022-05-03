@@ -16,6 +16,8 @@ import Karan from '../../components/images/Karan Shah.jpg';
 import Session1 from '../../components/images/session1.webp';
 import Session2 from '../../components/images/session2.png';
 import Session3 from '../../components/images/session3.webp';
+import Video from '../Video';
+import '../../components/Video.css';
 
 function Home() {
   return (
@@ -66,6 +68,15 @@ function Home() {
       title='Entrepreneur Business Accelerator'
       date="14/03/22 - 23/03/22"
       time="08:00 am IST - 05:00 pm IST"/>
+      </div>
+      <h1 className='video__heading'>Motivational Videos</h1>
+      <div className='video_wrapper'>
+      <Video 
+      url="https://youtu.be/4HhYjeluSak"/>
+      <Video 
+      url="https://youtu.be/wbkpaA6LH80"/>
+      <Video 
+      url="https://youtu.be/jfeYsRZkTi8"/>
       </div>
       <Footer />
     </>

@@ -3,6 +3,7 @@
     --secondary: #fff;
     --dark-grey: #242424;
     --light-grey: #9ca3af;
+    --medium-grey: #6b7280;
 }
 
 .session_card {
@@ -19,6 +20,7 @@
 .session_card:hover {
     transform : scale(1.02);
     background-color: var(--secondary);
+    box-shadow: 0 2px 20px var(--medium-grey);
 }
 
 .session_card__body {
