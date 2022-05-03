@@ -2,41 +2,11 @@ import "./Question.css";
 import { useState } from "react";
 import HeroSection from "../HeroSection";
 import Footer from "../Footer";
+import { Button } from "../Button";
 import { Link } from "react-router-dom";
 function Question() {
-  const [like, setLike] = useState(100);
-  const [disLike, setDisLike] = useState(4);
-  const [likeActive, setLikeActive] = useState(false);
-  const [disLikeActive, setDisLikeActive] = useState(false);
-
-  function likef() {
-    if (likeActive) {
-      setLikeActive(false);
-      setLike(like - 1);
-    } else {
-      setLikeActive(true);
-      setLike(like + 1);
-      if (disLikeActive) {
-        setDisLikeActive(false);
-        setLike(like + 1);
-        setDisLike(disLike - 1);
-      }
-    }
-  }
-  function disLikef() {
-    if (disLikeActive) {
-      setDisLikeActive(false);
-      setDisLike(disLike - 1);
-    } else {
-      setDisLikeActive(true);
-      setDisLike(like + 1);
-      if (likeActive) {
-        setLikeActive(false);
-        setDisLike(disLike + 1);
-        setLike(like - 1);
-      }
-    }
-  }
+  // const [countUp, setCountUp] = useState(0);
+  // const [countDown, setCountDown] = useState(0);
   const questionSet = [
     "HOW DO YOU START A STARTUP?",
     "WHAT DO STARTUPS NEED TO KNOW?",
@@ -77,10 +47,7 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <span className="vote">
-            <button onClick={likef}>Like {like}</button>
-            <button onClick={disLikef}>Dislike {disLike}</button>
-          </span>
+          <span className="vote"></span>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[1]}
