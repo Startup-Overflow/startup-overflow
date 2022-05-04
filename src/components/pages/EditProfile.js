@@ -43,6 +43,7 @@ function EditProfile() {
       </div>
       <div className="multiple-select">
         <Multiselect
+          placeholder="Select job profile"
           options={options}
           className="multi-profile"
           displayValue="profile"
