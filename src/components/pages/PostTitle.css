@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #14b8a6;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+  --secondary-color: #fff;
+}
+.post-title-new {
+  height: 100%;
+  width: 100%;
+}
+.post-title-header {
+  height: 30%;
+  width: 100%;
+  background: var(--light-grey);
+  border: bottom left radius 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.header-title {
+  margin-left: 2rem;
+  padding-top: 2rem;
+  font-size: 2.8rem;
+  color: var(--primary-color);
+}
+.posted-by {
+  margin-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: var(--dark-grey);
+}
+.posted-by-name {
+  font-size: 1.2rem;
+  margin-left: 8px;
+}
+.posted-by-name:hover {
+  color: var(--primary-color);
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.post-event-date {
+  margin-top: 0.5rem;
+}
+.post-short-description {
+  background: var(--light-grey);
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.1rem;
+  color: var(--dark-grey);
+}
