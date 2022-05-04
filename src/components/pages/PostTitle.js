@@ -1,5 +1,6 @@
 import "./PostTitle.css";
 import { Button } from "../Button";
+import { Link } from "react-router-dom";
 function PostTitle() {
   return (
     <div className="post-title-new">
@@ -7,7 +8,11 @@ function PostTitle() {
         <div className="header-title">Risk Breaking Concept</div>
         <div className="posted-by">
           Posted by,
-          <span className="posted-by-name">Aritra</span>
+          <span className="posted-by-name">
+            <Link to="/Login" className="link">
+              Aritra
+            </Link>
+          </span>
           <div className="eventDateTime post-event-date">
             <i class="fa fa-calendar"></i>
             <span className="date">05/04/2022</span>

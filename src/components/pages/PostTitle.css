@@ -29,7 +29,6 @@
 }
 .posted-by-name {
   font-size: 1.2rem;
-  margin-left: 8px;
 }
 .posted-by-name:hover {
   color: var(--primary-color);
