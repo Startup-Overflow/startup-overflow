@@ -1,5 +1,5 @@
 import "./PostTitle.css";
-
+import { Button } from "../Button";
 function PostTitle() {
   return (
     <div className="post-title-new">
@@ -24,6 +24,22 @@ function PostTitle() {
         bear uncertainties. Further, elaborating it they have made a slight
         differentiation between risk and uncertainty. According to this,
         "Uncertainty bear risk, which can neither be predicted nor insured."
+      </div>
+      <div className="short-description">
+        <textarea
+          placeholder="Post Description"
+          className="short-description-textarea post-title-description"
+        ></textarea>
+      </div>
+      <div className="up-down-vote">
+        <span className="up-down-vote-btn">
+          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+            Upvote
+          </Button>
+          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+            Downvote
+          </Button>
+        </span>
       </div>
     </div>
   );
