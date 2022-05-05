@@ -20,15 +20,9 @@
     box-shadow: 0 2px 20px var(--medium-grey);
 }
 
-.video_wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 24rem));
-    gap: 4rem;
-    padding: 2rem;
-}
-
 .video__heading {
     padding-top: 5rem;
+    padding-bottom: 2rem;
     text-align: center;
     color: var(--dark-grey);
 }
