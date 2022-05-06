@@ -20,6 +20,7 @@ import Video from "../Video";
 import "../../components/Video.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Testimonials from "../Testimonials";
 
 function Home() {
   const responsive = {
@@ -107,6 +108,39 @@ function Home() {
         <div><Video url="https://youtu.be/4HhYjeluSak" /></div>
         <div><Video url="https://youtu.be/wbkpaA6LH80" /></div>
         <div><Video url="https://youtu.be/jfeYsRZkTi8" /></div>
+      </Carousel>
+      <h1 className="testimonials__heading">Testimonials</h1>
+      <Carousel responsive={responsive}>
+        <div><Testimonials 
+              img={Brajesh}
+              title="Brajesh Maheshwari"
+              desg="Co-Founder Director of Allen Career Institute"
+              desc="Awesome"/></div>
+        <div><Testimonials 
+              img={Vinay}
+              title="Vinay Kumar Reddy Nuvvuru"
+              desg="Founder & Chairman of Indian Academy of Competitive Exams"
+              desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"/></div>
+        <div><Testimonials 
+              img={Prasant}
+              title="Dr P Prasant"
+              desg="Speaker, Educator and Administrator"
+              desc="Great events are being organised"/></div>
+        <div><Testimonials 
+              img={Brajesh}
+              title="Brajesh Maheshwari"
+              desg="Co-Founder Director of Allen Career Institute"
+              desc="Awesome"/></div>
+        <div><Testimonials 
+              img={Vinay}
+              title="Vinay Kumar Reddy Nuvvuru"
+              desg="Founder & Chairman of Indian Academy of Competitive Exams"
+              desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"/></div>
+        <div><Testimonials 
+              img={Prasant}
+              title="Dr P Prasant"
+              desg="Speaker, Educator and Administrator"
+              desc="Great events are being organised"/></div>
       </Carousel>
       <Footer />
     </>
