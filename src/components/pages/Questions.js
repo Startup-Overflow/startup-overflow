@@ -1,12 +1,10 @@
 import "./Question.css";
-// import { useState } from "react";
+
 import HeroSection from "../HeroSection";
 import Footer from "../Footer";
-// import { Button } from "../Button";
+
 import { Link } from "react-router-dom";
 function Question() {
-  // const [countUp, setCountUp] = useState(0);
-  // const [countDown, setCountDown] = useState(0);
   const questionSet = [
     "HOW DO YOU START A STARTUP?",
     "WHAT DO STARTUPS NEED TO KNOW?",
@@ -27,7 +25,7 @@ function Question() {
     <div>
       <HeroSection />
       <div className="question">
-        <h1 className="question-heading">Questions</h1>
+        <div className="question-heading">Questions</div>
 
         <h4 className="question-ask-link">
           <Link className="link" to="/askQuestion">
@@ -47,7 +45,7 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <span className="vote"></span>
+          {/* <span className="vote"></span> */}
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[1]}
