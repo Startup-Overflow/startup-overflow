@@ -1,10 +1,22 @@
 import "./Question.css";
-
+import { useState } from "react";
 import HeroSection from "../HeroSection";
 import Footer from "../Footer";
 
 import { Link } from "react-router-dom";
 function Question() {
+  const [like, setLike] = useState(0);
+  const [dislike, setDislike] = useState(0);
+
+  const thumbUpHandler = (e) => {
+    e.preventDefault();
+    setLike(like + 1);
+  };
+
+  const thumbDownHandler = (e) => {
+    e.preventDefault();
+    setDislike(dislike + 1);
+  };
   const questionSet = [
     "HOW DO YOU START A STARTUP?",
     "WHAT DO STARTUPS NEED TO KNOW?",
@@ -45,7 +57,10 @@ function Question() {
               Aritra
             </Link>
           </span>
-          {/* <span className="vote"></span> */}
+          <i onClick={thumbUpHandler} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like}</output>
+          <i onClick={thumbDownHandler} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[1]}
