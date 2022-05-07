@@ -5,17 +5,81 @@ import Footer from "../Footer";
 
 import { Link } from "react-router-dom";
 function Question() {
-  const [like, setLike] = useState(0);
-  const [dislike, setDislike] = useState(0);
+  const [like1, setLike1] = useState(2);
+  const [dislike1, setDislike1] = useState(1);
 
-  const thumbUpHandler = (e) => {
+  const [like2, setLike2] = useState(3);
+  const [dislike2, setDislike2] = useState(1);
+
+  const [like3, setLike3] = useState(1);
+  const [dislike3, setDislike3] = useState(2);
+
+  const [like4, setLike4] = useState(6);
+  const [dislike4, setDislike4] = useState(2);
+
+  const [like5, setLike5] = useState(1);
+  const [dislike5, setDislike5] = useState(1);
+
+  const [like6, setLike6] = useState(3);
+  const [dislike6, setDislike6] = useState(1);
+
+  const thumbUpHandler1 = (e) => {
     e.preventDefault();
-    setLike(like + 1);
+    setLike1(like1 + 1);
   };
 
-  const thumbDownHandler = (e) => {
+  const thumbDownHandler1 = (e) => {
     e.preventDefault();
-    setDislike(dislike + 1);
+    setDislike1(dislike1 + 1);
+  };
+
+  const thumbUpHandler2 = (e) => {
+    e.preventDefault();
+    setLike2(like2 + 1);
+  };
+
+  const thumbDownHandler2 = (e) => {
+    e.preventDefault();
+    setDislike2(dislike2 + 1);
+  };
+
+  const thumbUpHandler3 = (e) => {
+    e.preventDefault();
+    setLike3(like3 + 1);
+  };
+
+  const thumbDownHandler3 = (e) => {
+    e.preventDefault();
+    setDislike3(dislike3 + 1);
+  };
+
+  const thumbUpHandler4 = (e) => {
+    e.preventDefault();
+    setLike4(like4 + 1);
+  };
+
+  const thumbDownHandler4 = (e) => {
+    e.preventDefault();
+    setDislike4(dislike4 + 1);
+  };
+
+  const thumbUpHandler5 = (e) => {
+    e.preventDefault();
+    setLike5(like5 + 1);
+  };
+
+  const thumbDownHandler5 = (e) => {
+    e.preventDefault();
+    setDislike5(dislike5 + 1);
+  };
+  const thumbUpHandler6 = (e) => {
+    e.preventDefault();
+    setLike6(like6 + 1);
+  };
+
+  const thumbDownHandler6 = (e) => {
+    e.preventDefault();
+    setDislike6(dislike6 + 1);
   };
   const questionSet = [
     "HOW DO YOU START A STARTUP?",
@@ -57,10 +121,10 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler} class="fa fa-thumbs-up" />
-          <output id="thumbup-vote">{like}</output>
-          <i onClick={thumbDownHandler} class="fa fa-thumbs-down" />
-          <output id="thumbdown-vote">{dislike}</output>
+          <i onClick={thumbUpHandler1} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like1}</output>
+          <i onClick={thumbDownHandler1} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike1}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[1]}
@@ -75,6 +139,10 @@ function Question() {
               Aritra
             </Link>
           </span>
+          <i onClick={thumbUpHandler2} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like2}</output>
+          <i onClick={thumbDownHandler2} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike2}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[2]}
@@ -89,6 +157,10 @@ function Question() {
               Aritra
             </Link>
           </span>
+          <i onClick={thumbUpHandler3} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like3}</output>
+          <i onClick={thumbDownHandler3} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike3}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[3]}
@@ -103,6 +175,10 @@ function Question() {
               Aritra
             </Link>
           </span>
+          <i onClick={thumbUpHandler4} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like4}</output>
+          <i onClick={thumbDownHandler4} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike4}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[4]}
@@ -117,6 +193,10 @@ function Question() {
               Aritra
             </Link>
           </span>
+          <i onClick={thumbUpHandler5} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like5}</output>
+          <i onClick={thumbDownHandler5} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike5}</output>
         </div>
         <p className="question-question">
           <span className="q">Q</span> {questionSet[5]}
@@ -131,6 +211,10 @@ function Question() {
               Aritra
             </Link>
           </span>
+          <i onClick={thumbUpHandler6} class="fa fa-thumbs-up" />
+          <output id="thumbup-vote">{like6}</output>
+          <i onClick={thumbDownHandler6} class="fa fa-thumbs-down" />
+          <output id="thumbdown-vote">{dislike6}</output>
         </div>
         <Footer />
       </div>

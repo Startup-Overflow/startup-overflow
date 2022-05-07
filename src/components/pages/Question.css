@@ -76,7 +76,7 @@ font-size:2.6rem
 }
 .fa-thumbs-up, .fa-thumbs-down{
   margin-left:0.8rem;
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 #thumbup-vote, #thumbdown-vote{
   margin: 0.5rem;
