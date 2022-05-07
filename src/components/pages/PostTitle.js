@@ -1,7 +1,19 @@
 import "./PostTitle.css";
 import { Button } from "../Button";
+import Footer from "../Footer";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 function PostTitle() {
+  const [count, setCount] = useState(4);
+  const incrementCount = (e) => {
+    setCount(count + 1);
+    e.preventDefault();
+  };
+  const decrementCount = (e) => {
+    setCount(count - 1);
+    e.preventDefault();
+  };
+
   return (
     <div className="post-title-new">
       <div className="post-title-header">
@@ -37,15 +49,50 @@ function PostTitle() {
         ></textarea>
       </div>
       <div className="up-down-vote">
-        <span className="up-down-vote-btn">
-          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+        <span>
+          <Button
+            onClick={incrementCount}
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
             Upvote
           </Button>
-          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+          <output id="vote-result">{count}</output>
+          <Button
+            onClick={decrementCount}
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+          >
             Downvote
           </Button>
         </span>
       </div>
+      <div className="comment-heading">Comments</div>
+      <div className="title-post-textarea">
+        <textarea
+          placeholder="Add Comments"
+          className=" short-description-textarea-register-startup post-title-textarea"
+        ></textarea>
+      </div>
+      <div className="title-post-textarea">
+        <textarea
+          placeholder="Add Comments"
+          className=" short-description-textarea-register-startup post-title-textarea"
+        ></textarea>
+      </div>
+      <div className="title-post-textarea">
+        <textarea
+          placeholder="Add Comments"
+          className=" short-description-textarea-register-startup post-title-textarea"
+        ></textarea>
+      </div>
+      <div className="title-post-textarea">
+        <textarea
+          placeholder="Add Comments"
+          className=" short-description-textarea-register-startup post-title-textarea"
+        ></textarea>
+      </div>
+      <Footer />
     </div>
   );
 }

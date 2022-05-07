@@ -57,5 +57,25 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
-/* .up-down-vote-btn {
-} */
+.up-down-vote {
+  text-align: center;
+}
+
+.comment-heading {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+.title-post-textarea {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.post-title-textarea {
+  height: 6rem;
+}
+#vote-result {
+  margin-right: 0.6rem;
+  padding: 1.6rem;
+  font-size:1.6rem;
+  color: var(--dark-grey);
+}
