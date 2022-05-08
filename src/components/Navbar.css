@@ -51,16 +51,17 @@
   }
   
   .nav-item {
-    height: 80px;
+    height: 85px;
   }
+
   
   .nav-links {
     color: var(--secondary);
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    height: 100%;
+    padding: 0.7rem 1rem;
+    height: 10vh;
   }
   
   .nav-links:hover {

@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
-import { Link } from 'react-router-dom';
-import './Navbar.css';
-import Logo from './images/logo.png';
+import React, { useState, useEffect } from "react";
+import { Button } from "./Button";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import Logo from "./images/logo.png";
+import Dropdown from "../components/pages/Dropdown";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -10,6 +11,8 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const [dropdown, showDropdown] = useState(false);
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -23,78 +26,75 @@ function Navbar() {
     showButton();
   }, []);
 
-  window.addEventListener('resize', showButton);
+  window.addEventListener("resize", showButton);
 
   return (
     <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <img src={Logo} id='logo' alt='text'/>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img src={Logo} id="logo" alt="text" />
             Startup Overflow
           </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link 
-                to='/about' 
-                className='nav-links' 
-                onClick={closeMobileMenu}
-              >
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                 About
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/questions'
-                className='nav-links'
+                to="/questions"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Questions
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className="nav-item">
               <Link
-                to='/videos'
-                className='nav-links'
+                to="/videos"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Videos
               </Link>
             </li>
 
-            <li className='nav-item'>
+            <li
+              className="nav-item "
+              onMouseEnter={() => showDropdown(true)}
+              onMouseLeave={() => showDropdown(false)}
+            >
               <Link
-                to='/services'
-                className='nav-links'
+                to="/services"
+                className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Services
               </Link>
+              {dropdown && <Dropdown />}
             </li>
 
-            <li className='nav-item'>
-              <Link
-                to='/blogs'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
+            <li className="nav-item">
+              <Link to="/blogs" className="nav-links" onClick={closeMobileMenu}>
                 Blogs
               </Link>
             </li>
             <li>
               <Link
-                to='/login'
-                className='nav-links-mobile'
+                to="/login"
+                className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Login
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Login</Button>}
+          {button && <Button buttonStyle="btn--outline">Login</Button>}
         </div>
       </nav>
     </>

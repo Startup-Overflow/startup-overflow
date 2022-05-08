@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #14b8a6;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+  --secondary-color: #fff;
+  --medium-grey: #6b7280;
+}
+
+.services-submenu {
+  width: 12rem;
+  position: absolute;
+  top: 100px;
+  list-style: none;
+  text-align: start;
+}
+
+.services-submenu li {
+  background: var(--dark-grey);
+  cursor: pointer;
+}
+.submenu-item {
+  
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 16px;
+}
+.services-submenu.clicked {
+  display: none;
+}
+.services-submenu li a:hover {
+  background:var(--light-grey);
+}
