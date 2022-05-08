@@ -1,6 +1,6 @@
 import "./Modal.css";
 import { Button } from "./Button";
-function Modal({ closeModal }) {
+function Modu({ closeModal }) {
   const closeModalHandler = (e) => {
     e.preventDefault();
     closeModal(false);
@@ -19,4 +19,4 @@ function Modal({ closeModal }) {
     </div>
   );
 }
-export default Modal;
+export default Modu;
