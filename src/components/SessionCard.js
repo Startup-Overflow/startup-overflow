@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SessionCard.css";
 import { Button } from "./Button";
 import Modal from "../components/Modal";
 
 function SessionCard(props) {
+  const [openModal, setOpenModal] = useState(false);
   const attendEventHandler = (e) => {
+    setOpenModal(true);
     e.preventDefault();
   };
   return (
@@ -21,7 +23,7 @@ function SessionCard(props) {
         <Button onClick={attendEventHandler} buttonStyle="btn--outline">
           Attend
         </Button>
-        <Modal />
+        {openModal && <Modal closeModal={setOpenModal} />}
       </div>
     </div>
   );
