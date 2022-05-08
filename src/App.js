@@ -13,7 +13,9 @@ import Register from "./components/pages/Register";
 import AskQuestion from "./components/pages/AskQuestion";
 import EditProfile from "./components/pages/EditProfile";
 import RegisterStartup from "./components/pages/RegisterStartup";
+import CreateBlogs from "./components/pages/createBlogs";
 import PostTitle from "./components/pages/PostTitle";
+import CreateIdea from "./components/pages/CreateIdea";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path="/editProfile" element={<EditProfile />} />
           <Route path="/registerStartup" element={<RegisterStartup />} />
           <Route path="/postTitle" element={<PostTitle />} />
+          <Route path="/createBlogs" element={<CreateBlogs />} />
+          <Route path="/createIdea" element={<CreateIdea />} />
         </Routes>
       </Router>
     </>

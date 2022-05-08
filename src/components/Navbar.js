@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./Button";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import Logo from "./images/logo.png";
 import Dropdown from "../components/pages/Dropdown";
@@ -32,36 +32,40 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
             <img src={Logo} id="logo" alt="text" />
             Startup Overflow
-          </Link>
+          </NavLink>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink
+                to="/about"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/questions"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Questions
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/videos"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Videos
-              </Link>
+              </NavLink>
             </li>
 
             <li
@@ -69,29 +73,33 @@ function Navbar() {
               onMouseEnter={() => showDropdown(true)}
               onMouseLeave={() => showDropdown(false)}
             >
-              <Link
+              <NavLink
                 to="/services"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Services
-              </Link>
+              </NavLink>
               {dropdown && <Dropdown />}
             </li>
 
             <li className="nav-item">
-              <Link to="/blogs" className="nav-links" onClick={closeMobileMenu}>
+              <NavLink
+                to="/blogs"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Blogs
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/login"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Login
-              </Link>
+              </NavLink>
             </li>
           </ul>
           {button && <Button buttonStyle="btn--outline">Login</Button>}

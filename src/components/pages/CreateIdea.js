@@ -1,4 +1,3 @@
-import "./AskQuestion.css";
 import { useRef, useState } from "react";
 import HeroSection from "../HeroSection";
 import JoditEditor from "jodit-react";
@@ -6,7 +5,7 @@ import Footer from "../Footer";
 
 import { Button } from "../Button";
 
-function AskQuestion() {
+function CreateIdea() {
   const [value, setValue] = useState("");
   const editor = useRef(null);
   function askQuestionHandler(event) {
@@ -16,18 +15,18 @@ function AskQuestion() {
     <div className="ask-question">
       <HeroSection />
       <div className="edit-profile-heading">
-        Ask
-        <span className="edit-profile-heading-selected"> Question</span>
+        Enter
+        <span className="edit-profile-heading-selected"> Idea</span>
       </div>
       <input
-        placeholder="Post Question Title"
+        placeholder="Enter Idea Title"
         type="text"
         className="post-title"
       />
 
       <div className="short-description">
         <textarea
-          placeholder="Short Description of Question"
+          placeholder="Short Description of Idea"
           className="short-description-textarea"
         ></textarea>
       </div>
@@ -54,4 +53,4 @@ function AskQuestion() {
   );
 }
 
-export default AskQuestion;
+export default CreateIdea;
