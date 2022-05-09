@@ -13,8 +13,13 @@ import Register from "./components/pages/Register";
 import AskQuestion from "./components/pages/AskQuestion";
 import EditProfile from "./components/pages/EditProfile";
 import RegisterStartup from "./components/pages/RegisterStartup";
+import CreateBlogs from "./components/pages/createBlogs";
 import PostTitle from "./components/pages/PostTitle";
+<<<<<<< HEAD
 import Mentors from "./components/pages/Mentors";
+=======
+import CreateIdea from "./components/pages/CreateIdea";
+>>>>>>> 25159951144a3edb1a2ff3e676f649dcb47925c7
 
 function App() {
   return (
@@ -34,7 +39,12 @@ function App() {
           <Route path="/editProfile" element={<EditProfile />} />
           <Route path="/registerStartup" element={<RegisterStartup />} />
           <Route path="/postTitle" element={<PostTitle />} />
+<<<<<<< HEAD
           <Route path="/mentors" element={<Mentors />} />
+=======
+          <Route path="/createBlogs" element={<CreateBlogs />} />
+          <Route path="/createIdea" element={<CreateIdea />} />
+>>>>>>> 25159951144a3edb1a2ff3e676f649dcb47925c7
         </Routes>
       </Router>
     </>

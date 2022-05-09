@@ -1,5 +1,6 @@
 import "./PostTitle.css";
 import { Button } from "../Button";
+
 import Footer from "../Footer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -67,7 +68,7 @@ function PostTitle() {
           </Button>
         </span>
       </div>
-      <div className="comment-heading">Comments</div>
+      <div className="comment-heading">Join Discussion!</div>
       <div className="title-post-textarea">
         <textarea
           placeholder="Add Comments"
