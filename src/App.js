@@ -14,6 +14,7 @@ import AskQuestion from "./components/pages/AskQuestion";
 import EditProfile from "./components/pages/EditProfile";
 import RegisterStartup from "./components/pages/RegisterStartup";
 import PostTitle from "./components/pages/PostTitle";
+import Mentors from "./components/pages/Mentors";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/editProfile" element={<EditProfile />} />
           <Route path="/registerStartup" element={<RegisterStartup />} />
           <Route path="/postTitle" element={<PostTitle />} />
+          <Route path="/mentors" element={<Mentors />} />
         </Routes>
       </Router>
     </>

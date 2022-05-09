@@ -62,3 +62,7 @@
     text-align: center;
     color: var(--dark-grey);
 }
+
+.mentors__rating {
+    padding: 1rem;
+}
