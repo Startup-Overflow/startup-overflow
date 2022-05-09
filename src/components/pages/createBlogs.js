@@ -6,7 +6,7 @@ import Footer from "../Footer";
 import { Button } from "../Button";
 
 function CreateBlogs() {
-  const [value, setValue] = useState("");
+  const [setValue] = useState("");
   const editor = useRef(null);
   function askQuestionHandler(event) {
     event.preventDefault();

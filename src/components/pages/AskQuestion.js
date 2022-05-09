@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import { Button } from "../Button";
 
 function AskQuestion() {
-  const [value, setValue] = useState("");
+  const [setValue] = useState("");
   const editor = useRef(null);
   function askQuestionHandler(event) {
     event.preventDefault();
