@@ -2,9 +2,13 @@ import React from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./HeroSection.css";
+import { Link } from "react-router-dom";
 import Demo from "./videos/Demo.mp4";
 
 function HeroSection() {
+  const queryEventHandler = (e) => {
+    e.preventDefault();
+  }
   return (
     <div className="hero-container">
       <video src={Demo} autoPlay loop muted />
@@ -17,8 +21,9 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn--large"
+          onClick={queryEventHandler}
         >
-          ASK QUERY
+          <Link to='/askQuestion' className="button-link">ASK QUERY</Link>
         </Button>
         <Button
           className="btns"
