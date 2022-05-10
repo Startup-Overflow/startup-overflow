@@ -18,8 +18,8 @@ import Session2 from "../../components/images/session2.png";
 import Session3 from "../../components/images/session3.webp";
 import Video from "../Video";
 import "../../components/Video.css";
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import Testimonials from "../Testimonials";
 
 function Home() {
@@ -27,21 +27,22 @@ function Home() {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      items: 5,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
+
   return (
     <>
       <HeroSection />
@@ -102,45 +103,75 @@ function Home() {
       </div>
       <h1 className="video__heading">Motivational Videos</h1>
       <Carousel responsive={responsive}>
-        <div><Video url="https://youtu.be/4HhYjeluSak" /></div>
-        <div><Video url="https://youtu.be/wbkpaA6LH80" /></div>
-        <div><Video url="https://youtu.be/jfeYsRZkTi8" /></div>
-        <div><Video url="https://youtu.be/4HhYjeluSak" /></div>
-        <div><Video url="https://youtu.be/wbkpaA6LH80" /></div>
-        <div><Video url="https://youtu.be/jfeYsRZkTi8" /></div>
+        <div>
+          <Video url="https://youtu.be/4HhYjeluSak" />
+        </div>
+        <div>
+          <Video url="https://youtu.be/wbkpaA6LH80" />
+        </div>
+        <div>
+          <Video url="https://youtu.be/jfeYsRZkTi8" />
+        </div>
+        <div>
+          <Video url="https://youtu.be/4HhYjeluSak" />
+        </div>
+        <div>
+          <Video url="https://youtu.be/wbkpaA6LH80" />
+        </div>
+        <div>
+          <Video url="https://youtu.be/jfeYsRZkTi8" />
+        </div>
       </Carousel>
       <h1 className="testimonials__heading">Testimonials</h1>
       <Carousel responsive={responsive}>
-        <div><Testimonials 
-              img={Brajesh}
-              title="Brajesh Maheshwari"
-              desg="Co-Founder Director of Allen Career Institute"
-              desc="Awesome"/></div>
-        <div><Testimonials 
-              img={Vinay}
-              title="Vinay Kumar Reddy Nuvvuru"
-              desg="Founder & Chairman of Indian Academy of Competitive Exams"
-              desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"/></div>
-        <div><Testimonials 
-              img={Prasant}
-              title="Dr P Prasant"
-              desg="Speaker, Educator and Administrator"
-              desc="Great events are being organised"/></div>
-        <div><Testimonials 
-              img={Brajesh}
-              title="Brajesh Maheshwari"
-              desg="Co-Founder Director of Allen Career Institute"
-              desc="Awesome"/></div>
-        <div><Testimonials 
-              img={Vinay}
-              title="Vinay Kumar Reddy Nuvvuru"
-              desg="Founder & Chairman of Indian Academy of Competitive Exams"
-              desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"/></div>
-        <div><Testimonials 
-              img={Prasant}
-              title="Dr P Prasant"
-              desg="Speaker, Educator and Administrator"
-              desc="Great events are being organised"/></div>
+        <div>
+          <Testimonials
+            img={Brajesh}
+            title="Brajesh Maheshwari"
+            desg="Co-Founder Director of Allen Career Institute"
+            desc="Awesome"
+          />
+        </div>
+        <div>
+          <Testimonials
+            img={Vinay}
+            title="Vinay Kumar Reddy Nuvvuru"
+            desg="Founder & Chairman of Indian Academy of Competitive Exams"
+            desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"
+          />
+        </div>
+        <div>
+          <Testimonials
+            img={Prasant}
+            title="Dr P Prasant"
+            desg="Speaker, Educator and Administrator"
+            desc="Great events are being organised"
+          />
+        </div>
+        <div>
+          <Testimonials
+            img={Brajesh}
+            title="Brajesh Maheshwari"
+            desg="Co-Founder Director of Allen Career Institute"
+            desc="Awesome"
+          />
+        </div>
+        <div>
+          <Testimonials
+            img={Vinay}
+            title="Vinay Kumar Reddy Nuvvuru"
+            desg="Founder & Chairman of Indian Academy of Competitive Exams"
+            desc="The work you are doing and the effort you are making to improve the startup scenario for India is really commendable"
+          />
+        </div>
+        <div>
+          <Testimonials
+            img={Prasant}
+            title="Dr P Prasant"
+            desg="Speaker, Educator and Administrator"
+            desc="Great events are being organised"
+          />
+        </div>
       </Carousel>
       <Footer />
     </>
