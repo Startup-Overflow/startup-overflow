@@ -1,8 +1,15 @@
 import React from "react";
 import "./Card.css";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 function Card(props) {
+  const requestEventHandler = (event) => {
+    event.preventDefault();
+  };
+  const profileEventhandler = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="card">
       <div className="card__body">
@@ -10,14 +17,20 @@ function Card(props) {
         <h2 className="card__title">{props.title}</h2>
         <div className="card__description">{props.desc}</div>
         <div className="mentors__rating">
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
-        <i class='fa fa-star'></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
         </div>
-        <Button buttonStyle="btn--outline">Request Appointment</Button>
-        <Button buttonStyle="btn--outline">View Profile</Button>
+        <Button onClick={requestEventHandler} buttonStyle="btn--outline">
+          Request Appointment
+        </Button>
+        <Button buttonStyle="btn--secondary" onClick={profileEventhandler}>
+          <Link to="/viewProfile" className="button-link">
+            View Profile
+          </Link>
+        </Button>
       </div>
     </div>
   );

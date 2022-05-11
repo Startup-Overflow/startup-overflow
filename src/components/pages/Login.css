@@ -98,11 +98,11 @@ label {
 .link {
   margin-left: 0.4rem;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .link:hover {
   transform: translateY(-5px);
-  color: var(--dark-grey);
+  color: var(--primary-color);
 }
 .welcomeNote h3 {
   margin-left: 1rem;

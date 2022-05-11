@@ -83,3 +83,6 @@ video {
   color: var(--secondary);
   text-decoration: none;
 }
+.button-link:hover{
+  color: var(--dark-grey);
+}
