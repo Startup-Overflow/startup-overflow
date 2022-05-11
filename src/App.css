@@ -4,6 +4,14 @@
     padding: 0;
     font-family: 'PT Sans', sans-serif;
   }
+
+  :root {
+    --primary: #14b8a6;
+    --secondary: #fff;
+    --dark-grey: #242424;
+    --light-grey: #9ca3af;
+    --medium-grey: #6b7280;
+  }
   
   .home,
   .services,
@@ -22,15 +30,15 @@
     gap:1.5rem;
   }
   .box-container .box{
-    flex: 1 1 30rem;
+    flex: 1 1 20rem;
     border-radius: .5rem;
     padding:1rem;
     text-align: center;
   }
   .box-container .box i{
     padding:1rem;
-    font-size: 5rem;
-    color:var(--aqua);
+    font-size: 2rem;
+    color:var(--primary);
   }
   .box-container .box h3{
     font-size: 2.5rem;
