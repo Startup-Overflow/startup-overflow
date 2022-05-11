@@ -26,7 +26,7 @@ function Card(props) {
         <Button onClick={requestEventHandler} buttonStyle="btn--outline">
           Request Appointment
         </Button>
-        <Button buttonStyle="btn--secondary" onClick={profileEventhandler}>
+        <Button buttonStyle="btn--outline" onClick={profileEventhandler}>
           <Link to="/viewProfile" className="button-link">
             View Profile
           </Link>

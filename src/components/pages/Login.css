@@ -95,14 +95,15 @@ label {
   height: 100%;
   object-fit: cover;
 }
-.link {
+.registerlink {
   margin-left: 0.4rem;
   text-decoration: none;
-  color: var(--secondary-color);
-}
-.link:hover {
-  transform: translateY(-5px);
   color: var(--primary-color);
+}
+.registerlink:hover {
+  transform: translateY(-5px);
+  color: var(--dark-grey);
+  text-decoration: none;
 }
 .welcomeNote h3 {
   margin-left: 1rem;

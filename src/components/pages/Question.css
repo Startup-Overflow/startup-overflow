@@ -7,8 +7,8 @@
 .question {
   height: 100%;
   width: 100%;
-
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .question-heading {
 color: var(--primary-color);
@@ -23,7 +23,7 @@ font-size:2.6rem
 }
 .question-ask-link:hover {
   color: var(--primary-color);
-  text-decoration: underline;
+  text-decoration: none;
   font-style: italic;
 }
 .question-question {

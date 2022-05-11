@@ -57,10 +57,10 @@ p {
   margin-left: 0.3rem;
   font-style: italic;
   cursor: pointer;
-  color: var(--dark-grey);
+  color: var(--primary-color);
 }
 #link-signIn:hover {
-  color: var(--primary-color);
+  color: var(--dark-grey);
 }
 .body-right-register {
   height: 110vh;

@@ -104,7 +104,7 @@ function Question() {
         <div className="question-heading">Questions</div>
 
         <h4 className="question-ask-link">
-          <Link className="link" to="/askQuestion">
+          <Link className="registerlink" to="/askQuestion">
             Ask a Question
           </Link>
         </h4>
@@ -216,8 +216,8 @@ function Question() {
           <i onClick={thumbDownHandler6} class="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike6}</output>
         </div>
+        </div>
         <Footer />
-      </div>
     </div>
   );
 }

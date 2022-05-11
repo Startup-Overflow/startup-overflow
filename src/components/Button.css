@@ -47,6 +47,6 @@
   .btn--medium:hover {
     transition: all 0.3s ease-out;
     background: var(--secondary);
-    color: #242424;
+    color: var(--dark-grey);
     transition: 250ms;
   }
