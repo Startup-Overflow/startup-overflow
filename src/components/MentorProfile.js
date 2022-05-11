@@ -7,6 +7,9 @@ function MentorProfile(props) {
   for (const [index, value] of elements.entries()) {
     items.push(<li key={index}>{value}</li>);
   }
+  const bookEventHandler = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <div className="container">
@@ -29,7 +32,11 @@ function MentorProfile(props) {
         <div className="mentorBio">Mentor Bio:</div>
         <div className="bio">{props.bio}</div>
         <div className="mentorBtn">
-          <Button buttonStyle="btn--outline" buttonSize="btn--large">
+          <Button
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+            onClick={bookEventHandler}
+          >
             {props.btnName}
           </Button>
         </div>
