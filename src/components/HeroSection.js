@@ -8,7 +8,7 @@ import Demo from "./videos/Demo.mp4";
 function HeroSection() {
   const queryEventHandler = (e) => {
     e.preventDefault();
-  }
+  };
   return (
     <div className="hero-container">
       <video src={Demo} autoPlay loop muted />
@@ -23,7 +23,9 @@ function HeroSection() {
           buttonSize="btn--large"
           onClick={queryEventHandler}
         >
-          <Link to='/askQuestion' className="button-link">ASK QUERY</Link>
+          <Link to="/askQuestion" className="button-link">
+            ASK QUERY
+          </Link>
         </Button>
         <Button
           className="btns"

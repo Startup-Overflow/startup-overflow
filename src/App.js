@@ -17,6 +17,7 @@ import CreateBlogs from "./components/pages/createBlogs";
 import PostTitle from "./components/pages/PostTitle";
 import Mentors from "./components/pages/Mentors";
 import CreateIdea from "./components/pages/CreateIdea";
+import ViewProfile from "./components/pages/ViewProfile";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
           <Route path="/mentors" element={<Mentors />} />
           <Route path="/createBlogs" element={<CreateBlogs />} />
           <Route path="/createIdea" element={<CreateIdea />} />
+          <Route path="/viewProfile" element={<ViewProfile />} />
         </Routes>
       </Router>
     </>
