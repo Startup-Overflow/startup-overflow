@@ -24,34 +24,43 @@
     padding: 2rem;
   }
 
-  .box-container{
+  .services-container{
     display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
+    flex-direction: column;
+    box-shadow: 0 2px 20px var(--light-grey);
+    border-radius: 5px;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
   }
-  .box-container .box{
-    flex: 1 1 20rem;
-    border-radius: .5rem;
-    padding:1rem;
+  .services-container .services{
+    overflow: hidden;
+    padding:1.3rem;
     text-align: center;
   }
-  .box-container .box i{
+  .services-container .services img{
     padding:1rem;
+    height: 10rem;
+    width: 10rem;
+  }
+  .services-container .services h3{
     font-size: 2rem;
-    color:var(--primary);
+    color: var(--dark-grey);
   }
-  .box-container .box h3{
-    font-size: 2.5rem;
-    color:#333;
+  .services-container .services:hover{
+    transform : scale(1.02);
+    background-color: var(--secondary);
+    box-shadow: 0 2px 20px var(--medium-grey);
   }
-  .box-container .box p{
-    font-size: 1.5rem;
-    color:#666;
-    padding:1rem 0;
-  }
-  .box-container .box:hover{
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
-  }
+
+  .services_wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    gap: 3rem;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
   
   .products {
 
