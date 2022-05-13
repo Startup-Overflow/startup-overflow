@@ -25,18 +25,19 @@
   }
 
   .services-container{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 20px var(--light-grey);
-    border-radius: 5px;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: transform 200ms ease-in;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem;
   }
   .services-container .services{
-    overflow: hidden;
     padding:1rem;
     text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    transition: transform 200ms ease-in;
   }
   .services-container .services img{
     padding:1rem;
@@ -52,15 +53,6 @@
     background-color: var(--secondary);
     box-shadow: 0 2px 20px var(--medium-grey);
   }
-
-  .services_wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
-    gap: 3rem;
-    justify-content: center;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-}
   
   .products {
 

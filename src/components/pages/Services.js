@@ -12,7 +12,6 @@ export default function Services() {
   return(
     <div>
     <h1 className='services_heading'>Our <span style={{color:'#14b8a6'}}>Services</span></h1>
-    <div className='services_wrapper'>
       <div className='services-container'>
       <div class="services">
             <img src={event} alt="img not found"></img>
@@ -43,7 +42,6 @@ export default function Services() {
             <h3>Innovative ideas</h3>
         </div>
       </div>
-    </div>
     </div>
   );
 }
