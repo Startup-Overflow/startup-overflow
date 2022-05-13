@@ -1,0 +1,42 @@
+:root {
+    --primary: #14b8a6;
+    --secondary: #fff;
+    --dark-grey: #242424;
+    --light-grey: #d1d5db;
+    --medium-grey: #6b7280;
+}
+  
+  .services_heading {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 25rem));
+    gap: 2rem;
+    justify-content: center;
+    padding: 4rem;
+  }
+  .services-container .services{
+    padding:1rem;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--light-grey);
+    transition: transform 200ms ease-in;
+  }
+  .services-container .services img{
+    padding:1rem;
+    height: 10rem;
+    width: 10rem;
+  }
+  .services-container .services h3{
+    font-size: 2rem;
+    color: var(--dark-grey);
+  }
+  .services-container .services:hover{
+    transform : scale(1.02);
+    background-color: var(--secondary);
+    box-shadow: 0 2px 20px var(--medium-grey);
+  }

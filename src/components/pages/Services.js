@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../../components/pages/Services.css';
 import event from '../../components/images/icons8-event-64 (1).png';
 import workshop from '../../components/images/icons8-workshop-64.png';
 import session from '../../components/images/icons8-session-64.png';
