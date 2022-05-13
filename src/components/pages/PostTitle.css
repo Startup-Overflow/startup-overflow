@@ -62,15 +62,17 @@
 }
 
 .comment-heading {
+  margin-bottom: 1rem;
   text-align: center;
   color: var(--primary-color);
   font-size: 2.5rem;
 }
 .comment-sub-heading{
+  margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
   color: var(--primary-color);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
 }
 .title-post-textarea {
   margin-bottom: 1rem;
@@ -103,4 +105,8 @@
 .comment-section:hover{
   outline: 1px solid var(--primary-color);
   box-shadow: 4px 3px 9px -1px var(--primary-color)
+}
+.commentBtn{
+ text-align: center;
+ margin-top: 1rem;
 }

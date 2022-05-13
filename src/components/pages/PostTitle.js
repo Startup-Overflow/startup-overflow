@@ -18,23 +18,36 @@ function PostTitle() {
   const comments = [
     {
       name: "Sudipta",
-
+      id: 1,
       comment: "Front-End developer of this project",
     },
-    { name: "Aritra", comment: "Startup website" },
+    { name: "Aritra", id: 2, comment: "Startup website" },
+    { name: "Ujjwal", id: 3, comment: "Back-end developer of this project" },
   ];
   const commentItems = comments.map((element) => {
     return (
       <ul type="disc">
         <li
           style={{
-            fontWeight: "bold",
+            fontSize: "1.2rem",
             color: "#14b8a6",
+            listStyleType: "none",
           }}
         >
+          {element.id + ". "}
           {element.name}
         </li>
-        <li>{element.comment}</li>
+        <li
+          style={{
+            margin: "10px",
+            marginLeft: "20px",
+            listStyleType: "none",
+            color: "#242424",
+            fontStyle: "italic",
+          }}
+        >
+          {"-> " + element.comment}
+        </li>
       </ul>
     );
   });
@@ -93,16 +106,20 @@ function PostTitle() {
         </span>
       </div>
       <div className="comment-heading">Join Discussion!</div>
-      <div className="title-post-textarea">
-        <textarea
-          placeholder="Add Comments"
-          className=" short-description-textarea-register-startup post-title-textarea"
-        ></textarea>
+      <div className="comment-section">
+        <div>Name</div>
+        <input type="text" id="name-comment" />
+        <div>Comment</div>
+        <input type="text" id="type-comment" />
+      </div>
+      <div className="commentBtn">
+        <Button>Comment</Button>
       </div>
       <div className="comment-sub-heading">Comments</div>
       <div className="comment-section ">
         <div>{commentItems}</div>
       </div>
+
       <Footer />
     </div>
   );
