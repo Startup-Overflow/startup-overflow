@@ -7,11 +7,14 @@ import mentorship from '../../components/images/icons8-mentorship-64.png';
 import partnership from '../../components/images/icons8-partnership-64.png';
 import investment from '../../components/images/icons8-investment-60.png';
 import ideas from '../../components/images/icons8-innovation-50.png';
+import news from '../../components/images/icons8-news-64.png';
+import community from '../../components/images/icons8-community-64.png';
 
 export default function Services() {
   return(
     <div>
     <h1 className='services_heading'>Our <span style={{color:'#14b8a6'}}>Services</span></h1>
+      <h3 className='services_description'>We also provide some relevant and important services that are mentioned below. The services would help the entrepreneurs to think wisely and endeavour their dreams in a conquering manner.</h3>
       <div className='services-container'>
       <div class="services">
             <img src={event} alt="img not found"></img>
@@ -40,6 +43,14 @@ export default function Services() {
         <div class="services">
         <img src={ideas} alt="img not found"></img>
             <h3>Innovative ideas</h3>
+        </div>
+        <div class="services">
+        <img src={news} alt="img not found"></img>
+            <h3>Latest News</h3>
+        </div>
+        <div class="services">
+        <img src={community} alt="img not found"></img>
+            <h3>Community</h3>
         </div>
       </div>
     </div>
