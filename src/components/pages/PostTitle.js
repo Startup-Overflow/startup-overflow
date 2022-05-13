@@ -15,6 +15,30 @@ function PostTitle() {
     e.preventDefault();
   };
 
+  const comments = [
+    {
+      name: "Sudipta",
+
+      comment: "Front-End developer of this project",
+    },
+    { name: "Aritra", comment: "Startup website" },
+  ];
+  const commentItems = comments.map((element) => {
+    return (
+      <ul type="disc">
+        <li
+          style={{
+            fontWeight: "bold",
+            color: "#14b8a6",
+          }}
+        >
+          {element.name}
+        </li>
+        <li>{element.comment}</li>
+      </ul>
+    );
+  });
+
   return (
     <div className="post-title-new">
       <div className="post-title-header">
@@ -22,7 +46,7 @@ function PostTitle() {
         <div className="posted-by">
           Posted by,
           <span className="posted-by-name">
-            <Link to="/Login" className="link">
+            <Link to="/Login" className="postTitleLink">
               Aritra
             </Link>
           </span>
@@ -75,23 +99,9 @@ function PostTitle() {
           className=" short-description-textarea-register-startup post-title-textarea"
         ></textarea>
       </div>
-      <div className="title-post-textarea">
-        <textarea
-          placeholder="Add Comments"
-          className=" short-description-textarea-register-startup post-title-textarea"
-        ></textarea>
-      </div>
-      <div className="title-post-textarea">
-        <textarea
-          placeholder="Add Comments"
-          className=" short-description-textarea-register-startup post-title-textarea"
-        ></textarea>
-      </div>
-      <div className="title-post-textarea">
-        <textarea
-          placeholder="Add Comments"
-          className=" short-description-textarea-register-startup post-title-textarea"
-        ></textarea>
+      <div className="comment-sub-heading">Comments</div>
+      <div className="comment-section ">
+        <div>{commentItems}</div>
       </div>
       <Footer />
     </div>

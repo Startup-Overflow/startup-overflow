@@ -66,6 +66,12 @@
   color: var(--primary-color);
   font-size: 2.5rem;
 }
+.comment-sub-heading{
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
 .title-post-textarea {
   margin-bottom: 1rem;
   text-align: center;
@@ -78,4 +84,23 @@
   padding: 1.6rem;
   font-size:1.6rem;
   color: var(--dark-grey);
+}
+.postTitleLink{
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 4px;
+}
+.postTitleLink:hover{
+  color: var(--dark-grey);
+}
+.comment-section{
+  margin:auto;
+  width: 80%;
+  height: 60%;
+  box-shadow: 4px 3px 9px -1px var(--dark-grey);
+  padding:1rem
+}
+.comment-section:hover{
+  outline: 1px solid var(--primary-color);
+  box-shadow: 4px 3px 9px -1px var(--primary-color)
 }
