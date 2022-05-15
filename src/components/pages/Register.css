@@ -33,7 +33,7 @@
   height: 100%;
   object-fit: cover;
 }
-p {
+.register-description {
   margin-top: 4rem;
   color: var(--secondary-color);
   padding: 1.8rem 0.8rem;
