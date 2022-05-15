@@ -1,13 +1,10 @@
-import { useRef, useState } from "react";
 import HeroSection from "../HeroSection";
-import JoditEditor from "jodit-react";
+
 import Footer from "../Footer";
 
 import { Button } from "../Button";
 
 function CreateIdea() {
-  const [setValue] = useState("");
-  const editor = useRef(null);
   function askQuestionHandler(event) {
     event.preventDefault();
   }
@@ -31,9 +28,9 @@ function CreateIdea() {
         ></textarea>
       </div>
       <div className="question-heading">Details</div>
-      <div className="text-editor">
+      {/* <div className="text-editor">
         <JoditEditor ref={editor} onChange={(content) => setValue(content)} />
-      </div>
+      </div> */}
       <input
         placeholder="Add Some Hashtags"
         type="text"
