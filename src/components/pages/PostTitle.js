@@ -52,6 +52,19 @@ function PostTitle() {
     );
   });
 
+  const [namedata, setnamedata] = useState(null);
+  const [commentdata, setCommentdata] = useState(null);
+  const [displaycomment, setDisplaycomment] = useState(false);
+
+  const showComment = (e) => {
+    e.preventDefault();
+    setDisplaycomment(true);
+  };
+  const nameHandler = (e) => {
+    setnamedata(e.target.value);
+    setDisplaycomment(false);
+  };
+
   return (
     <div className="post-title-new">
       <div className="post-title-header">
@@ -108,16 +121,17 @@ function PostTitle() {
       <div className="comment-heading">Join Discussion!</div>
       <div className="comment-section">
         <div>Name</div>
-        <input type="text" id="name-comment" />
+        <input type="text" id="name-comment" onMessage={nameHandler} />
         <div>Comment</div>
         <input type="text" id="type-comment" />
       </div>
       <div className="commentBtn">
-        <Button>Comment</Button>
+        <Button onClick={showComment}>Comment</Button>
       </div>
       <div className="comment-sub-heading">Comments</div>
       <div className="comment-section ">
         <div>{commentItems}</div>
+        <div>{displaycomment ? <h4>{namedata}</h4> : null}</div>
       </div>
 
       <Footer />
