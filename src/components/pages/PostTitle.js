@@ -52,17 +52,16 @@ function PostTitle() {
     );
   });
 
-  const [namedata, setnamedata] = useState(null);
   const [commentdata, setCommentdata] = useState(null);
-  const [displaycomment, setDisplaycomment] = useState(false);
+  const [print, setPrint] = useState(false);
 
-  const showComment = (e) => {
-    e.preventDefault();
-    setDisplaycomment(true);
+  const commentHandler = (val) => {
+    setCommentdata(val.target.value);
+    setPrint(false);
   };
-  const nameHandler = (e) => {
-    setnamedata(e.target.value);
-    setDisplaycomment(false);
+  const showComment = (e) => {
+    setPrint(true);
+    e.preventDefault();
   };
 
   return (
@@ -120,18 +119,16 @@ function PostTitle() {
       </div>
       <div className="comment-heading">Join Discussion!</div>
       <div className="comment-section">
-        <div>Name</div>
-        <input type="text" id="name-comment" onMessage={nameHandler} />
-        <div>Comment</div>
-        <input type="text" id="type-comment" />
+        <div className="input-heading">Leave Your Comment!</div>
+        <input type="text" id="comment-comment" onChange={commentHandler} />
       </div>
       <div className="commentBtn">
         <Button onClick={showComment}>Comment</Button>
       </div>
-      <div className="comment-sub-heading">Comments</div>
+      <div />
       <div className="comment-section ">
         <div>{commentItems}</div>
-        <div>{displaycomment ? <h4>{namedata}</h4> : null}</div>
+        <div>{print ? <h4>{commentdata}</h4> : null}</div>
       </div>
 
       <Footer />
