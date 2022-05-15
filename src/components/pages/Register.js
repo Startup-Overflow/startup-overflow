@@ -24,7 +24,7 @@ function Register() {
           <div className="body-register">
             <img src={registerImg} alt="img not found" id="register-img-id" />
           </div>
-          <p>
+          <p className="register-description">
             Startup Overflow is a platform for building entrepreneurs and
             entrepreneurship enthusiasts. It is a one stop solution for all your
             queries related to buisness, entrepreneurship ans startups.

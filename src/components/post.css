@@ -36,22 +36,29 @@
 }
 
 .post__image {
-  height:20rem;
+    height:13rem;
     width:20rem;
     border-radius: 0;
     object-fit: fill;
 }
 
 .post__title {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  text-align: left;
 }
 
 .post__title:hover {
   color: var(--primary);
 }
 
-.post__description {
-  padding: 0.5rem 1rem;
+.posted__by{
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--dark-grey);
+
 }
 
 .wrapper {
