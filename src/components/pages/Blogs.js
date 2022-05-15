@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../Footer";
-import Post from "../Post";
-import "../../components/Post.css";
+import Post from "../post";
+import "../../components/post.css";
 import HeroSection from "../HeroSection";
 import blog1 from '../../components/images/blog1.webp';
 import { Link } from "react-router-dom";
