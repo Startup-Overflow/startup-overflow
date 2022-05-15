@@ -1,6 +1,5 @@
-// import { useRef, useState } from "react";
 import HeroSection from "../HeroSection";
-// import JoditEditor from "jodit-react";
+
 import Footer from "../Footer";
 
 import { Button } from "../Button";
