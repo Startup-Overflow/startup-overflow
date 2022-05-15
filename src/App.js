@@ -18,6 +18,7 @@ import PostTitle from "./components/pages/PostTitle";
 import Mentors from "./components/pages/Mentors";
 import CreateIdea from "./components/pages/CreateIdea";
 import ViewProfile from "./components/pages/ViewProfile";
+import InnovativeIdeas from "./components/pages/InnovativeIdeas";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/createBlogs" element={<CreateBlogs />} />
           <Route path="/createIdea" element={<CreateIdea />} />
           <Route path="/viewProfile" element={<ViewProfile />} />
+          <Route path="/innovativeIdeas" element={<InnovativeIdeas />} />
         </Routes>
       </Router>
     </>
