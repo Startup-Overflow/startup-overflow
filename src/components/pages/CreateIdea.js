@@ -15,7 +15,7 @@ function CreateIdea() {
     <div className="ask-question">
       <HeroSection />
       <div className="edit-profile-heading">
-        Enter
+        Post
         <span className="edit-profile-heading-selected"> Idea</span>
       </div>
       <input
