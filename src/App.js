@@ -19,6 +19,7 @@ import Mentors from "./components/pages/Mentors";
 import CreateIdea from "./components/pages/CreateIdea";
 import ViewProfile from "./components/pages/ViewProfile";
 import InnovativeIdeas from "./components/pages/InnovativeIdeas";
+import AttendForm from "./components/AttendForm";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/createIdea" element={<CreateIdea />} />
           <Route path="/viewProfile" element={<ViewProfile />} />
           <Route path="/innovativeIdeas" element={<InnovativeIdeas />} />
+          <Route path="/attendForm" element={<AttendForm />} />
         </Routes>
       </Router>
     </>
