@@ -5,12 +5,40 @@ import welcomeImg from "../images/welcomeImg.svg";
 import { Button } from "../Button";
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
+import HOST from "../../Host";
+
 function Login() {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
+  const [redirect, setRedirect] = useState(false);
+  const [msg, setMsg] = useState("");
 
-  const submitHandler = (event) => {
+  const submitHandler = async (event) => {
     event.preventDefault();
+
+    const response = await fetch(`${HOST}/users/login/`,{
+      method:"POST",
+      headers: {"Content-Type": "application/json"},
+      body:JSON.stringify({
+          username,
+          password,
+      })
+    })
+    // .then(res =>{
+    //   return res.json()
+    // })
+    // .then(data => console.log(data))
+    // .catch(error => console.log('ERROR'))
+
+    const content = await response.json()
+    if (typeof content.token !== 'undefined') {
+        localStorage.setItem("token",content.token)
+        console.log("token type",content.token)
+        setRedirect(true);
+    }
+    else{
+        setMsg("Invalid Username or Password");
+    }
   };
 
   return (
@@ -31,7 +59,7 @@ function Login() {
               }}
               id="username"
             />
-
+            <div style={{color:"red"}}>{msg}</div>
             <label for="password">Password</label>
             <input
               placeholder="enter password"
