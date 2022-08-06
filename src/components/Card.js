@@ -17,11 +17,11 @@ function Card(props) {
         <h2 className="card__title">{props.title}</h2>
         <div className="card__description">{props.desc}</div>
         <div className="mentors__rating">
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
-          <i class="fa fa-star"></i>
+          <i className="fa fa-star"></i>
+          <i className="fa fa-star"></i>
+          <i className="fa fa-star"></i>
+          <i className="fa fa-star"></i>
+          <i className="fa fa-star"></i>
         </div>
         <Button onClick={requestEventHandler} buttonStyle="btn--outline">
           Request Appointment

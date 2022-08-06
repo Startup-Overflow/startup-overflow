@@ -121,9 +121,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler1} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler1} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like1}</output>
-          <i onClick={thumbDownHandler1} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler1} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike1}</output>
         </div>
         <p className="question-question">
@@ -139,9 +139,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler2} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler2} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like2}</output>
-          <i onClick={thumbDownHandler2} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler2} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike2}</output>
         </div>
         <p className="question-question">
@@ -157,9 +157,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler3} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler3} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like3}</output>
-          <i onClick={thumbDownHandler3} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler3} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike3}</output>
         </div>
         <p className="question-question">
@@ -175,9 +175,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler4} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler4} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like4}</output>
-          <i onClick={thumbDownHandler4} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler4} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike4}</output>
         </div>
         <p className="question-question">
@@ -193,9 +193,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler5} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler5} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like5}</output>
-          <i onClick={thumbDownHandler5} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler5} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike5}</output>
         </div>
         <p className="question-question">
@@ -211,9 +211,9 @@ function Question() {
               Aritra
             </Link>
           </span>
-          <i onClick={thumbUpHandler6} class="fa fa-thumbs-up" />
+          <i onClick={thumbUpHandler6} className="fa fa-thumbs-up" />
           <output id="thumbup-vote">{like6}</output>
-          <i onClick={thumbDownHandler6} class="fa fa-thumbs-down" />
+          <i onClick={thumbDownHandler6} className="fa fa-thumbs-down" />
           <output id="thumbdown-vote">{dislike6}</output>
         </div>
         </div>

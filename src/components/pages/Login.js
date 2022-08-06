@@ -49,7 +49,7 @@ function Login() {
             <img src={logo} alt="img not found" id="img-id" />
           </div>
           <form onSubmit={submitHandler}>
-            <label for="username">Username</label>
+            <label htmlFor="username">Username</label>
             <input
               placeholder="enter username"
               type="text"
@@ -60,7 +60,7 @@ function Login() {
               id="username"
             />
             <div style={{color:"red"}}>{msg}</div>
-            <label for="password">Password</label>
+            <label htmlFor="password">Password</label>
             <input
               placeholder="enter password"
               type="password"

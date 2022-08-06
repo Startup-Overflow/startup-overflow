@@ -76,9 +76,9 @@ function PostTitle() {
             </Link>
           </span>
           <div className="eventDateTime post-event-date">
-            <i class="fa fa-calendar"></i>
+            <i className="fa fa-calendar"></i>
             <span className="date">05/04/2022</span>
-            <i class="fa fa-clock"></i>
+            <i className="fa fa-clock"></i>
             <span className="time">06:30 am IST</span>
           </div>
         </div>

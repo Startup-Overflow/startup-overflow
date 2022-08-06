@@ -17,9 +17,9 @@ function SessionCard(props) {
         />
         <h2 className="session_card__title">{props.title}</h2>
         <div className="eventDateTime">
-          <i class="fa fa-calendar"></i>
+          <i className="fa fa-calendar"></i>
           <span className="date">{props.date}</span>
-          <i class="fa fa-clock"></i>
+          <i className="fa fa-clock"></i>
           <span className="time">{props.time}</span>
         </div>
         <Button buttonStyle="btn--outline" onClick={attendEventHandler}>
