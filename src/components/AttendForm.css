@@ -1,0 +1,22 @@
+:root {
+  --primary: #14b8a6;
+  --secondary: #fff;
+  --dark-grey: #242424;
+  --light-grey: #e5e7eb;
+}
+
+.attend-form{
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  padding: 2rem;
+  height: 80%;
+  width: 60%;
+  background: var(--light-grey);
+  border-radius:0.7rem
+}
+
+#modalName{
+  height: 40px;
+  padding: 0.5rem;
+}
