@@ -59,7 +59,7 @@ function Login() {
               }}
               id="username"
             />
-            <div style={{color:"red"}}>{msg}</div>
+            <p style={{color:"red", fontSize: "small"}}>{msg}</p>
             <label htmlFor="password">Password</label>
             <input
               placeholder="enter password"

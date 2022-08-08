@@ -81,12 +81,12 @@
   margin: auto;
   width: 100%;
 }
-#regFName,
-#regLName,
-#regEmail,
-#regUser,
-#regPassword,
-#regConfirmPassword {
+#first_name,
+#last_name,
+#email,
+#username,
+#password,
+#confirm_password {
   border-radius: 0.4rem;
   display: block;
   border: none;
@@ -98,21 +98,21 @@
   box-shadow: 4px 3px 9px -1px var(--dark-grey);
   transition: all 0.1s ease-in-out;
 }
-#regFName:hover,
-#regLName:hover,
-#regEmail:hover,
-#regUser:hover,
-#regPassword:hover,
-#regConfirmPassword:hover {
+#first_name:hover,
+#last_name:hover,
+#email:hover,
+#username:hover,
+#password:hover,
+#confirm_password:hover {
   box-shadow: 4px 3px 9px -1px var(--primary-color);
   outline: 0.5px solid var(--primary-color);
 }
-#regFName:focus,
-#regLName:focus,
-#regEmail:focus,
-#regUser:focus,
-#regPassword:focus,
-#regConfirmPassword:focus {
+#first_name:focus,
+#last_name:focus,
+#email:focus,
+#username:focus,
+#password:focus,
+#confirm_password:focus {
   outline: none;
   border: none;
 }

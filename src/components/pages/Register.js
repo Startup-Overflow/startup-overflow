@@ -4,17 +4,37 @@ import Footer from "../Footer";
 import registerImg from "../images/registerImg.svg";
 import { Link } from "react-router-dom";
 import { Button } from "../Button";
+import HOST from '../../Host';
 
 function Register() {
-  const [regFName, setregFName] = useState("");
-  const [regLName, setregLName] = useState("");
-  const [regEmail, setregEmail] = useState("");
-  const [regUser, setregUser] = useState("");
-  const [regPassword, setregpassword] = useState("");
-  const [regConfirmPassword, setregConfirmPassword] = useState("");
+  const [first_name, setfirst_name] = useState("");
+  const [last_name, setlast_name] = useState("");
+  const [email, setemail] = useState("");
+  const [username, setusername] = useState("");
+  const [password, setpassword] = useState("");
+  const [confirm_password, setconfirm_password] = useState("");
+  const [redirect, setRedirect] = useState(false);
 
-  const registerHandler = (e) => {
+  const registerHandler = async (e) => {
     e.preventDefault();
+
+    if (password===confirm_password){
+      const response = await fetch(`${HOST}/users/register/`,{
+        method:"POST",
+        headers: {"Content-Type": "application/json"},
+        body:JSON.stringify({
+            first_name,
+            last_name,
+            email,
+            username,
+            password,
+            confirm_password
+        })
+    })
+    setRedirect(true)
+    const content = await response.json()
+    console.log(content)
+  }
   };
 
   return (
@@ -47,76 +67,77 @@ function Register() {
                   <label>First name</label>
                   <input
                     type="text"
-                    name="regFName"
-                    id="regFName"
-                    value={regFName}
+                    name="first_name"
+                    id="first_name"
+                    value={first_name}
                     onChange={(e) => {
-                      setregFName(e.target.value);
+                      setfirst_name(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="input-group-register">
                   <label>Last name</label>
                   <input
                     type="text"
-                    name="regLName"
-                    id="regLName"
-                    value={regLName}
+                    name="last_name"
+                    id="last_name"
+                    value={last_name}
                     onChange={(e) => {
-                      setregLName(e.target.value);
+                      setlast_name(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="input-group-register">
                   <label>Email ID</label>
                   <input
                     type="Email"
-                    name="regEmail"
-                    id="regEmail"
-                    value={regEmail}
+                    name="email"
+                    id="email"
+                    value={email}
                     onChange={(e) => {
-                      setregEmail(e.target.value);
+                      setemail(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="input-group-register">
                   <label>Username</label>
                   <input
                     type="text"
-                    name="regUser"
-                    id="regUser"
-                    value={regUser}
+                    name="username"
+                    id="username"
+                    value={username}
                     onChange={(e) => {
-                      setregUser(e.target.value);
+                      setusername(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="input-group-register">
                   <label>Password</label>
                   <input
                     type="password"
-                    name="regpassword"
-                    id="regPassword"
-                    value={regPassword}
+                    name="password"
+                    id="password"
+                    value={password}
                     onChange={(e) => {
-                      setregpassword(e.target.value);
+                      setpassword(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="input-group-register">
                   <label>Confirm Password</label>
                   <input
                     type="password"
-                    name="regConfirmPassword"
-                    id="regConfirmPassword"
-                    value={regConfirmPassword}
+                    name="confirm_password"
+                    id="confirm_password"
+                    value={confirm_password}
                     onChange={(e) => {
-                      setregConfirmPassword(e.target.value);
+                      setconfirm_password(e.target.value);
                     }}
-                  />
+                  required/>
                 </div>
                 <div className="registerBtn">
                   <Button
+                    type="submit"
                     onClick={registerHandler}
                     buttonStyle="btn--outline"
                     buttonSize="btn--large"
