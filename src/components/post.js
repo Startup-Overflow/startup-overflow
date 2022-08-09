@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "./Button";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import HOST from '../Host';
 
 function Post(props) {
   const PostEventhandler = (event) => {
